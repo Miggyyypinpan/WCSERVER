@@ -63,19 +63,29 @@ button:hover {
 <body>
     <div class="container">
         <h1>Admin Page</h1>
-        <form action="/postAdmin" method="POST">
-            <label for="adminId">AdminID</label>
+        <form action="/postAdmin" enctype="multipart/form-data" method="POST">
+            <label for="adminId">Admin ID:</label>
             <input type="text" id="adminId" name="adminId">
-            <br>
-            <label for="firstName">First Name</label>
+            <br />
+
+            <label for="firstName">First Name: </label>
             <input type="text" id="firstName" name="firstName">
-            <br>
-            <label for="lasttName">Last Name</label>
+            <br />
+
+            <label for="lasttName">Last Name: </label>
             <input type="text" id="lastName" name="lastName">
-            <br>
-            <label for="department">Department</label>
+            <br />
+
+            <label for="department">Department: </label>
             <input type="text" id="department" name="department">
             <input type="submit" value="submit">
+            <br />
+
+            <label for="file">Select File: </label>
+            <input type="file" id="file" name="file">
+            <br />
+
+            <input type="submit" value="Submit" class="submit">
         </form>
     </div>
 </body>
